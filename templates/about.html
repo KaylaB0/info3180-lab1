@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>My Website - About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
 </head>
 <body>
     <h1>Kayla Byfield</h1>
-    <p>I'm learning Flask in Dynamic Web Development II.</p>
+    <p>I'm learning Flask in Dynamic Web Development II. Here's an image of one of my favourite animals, a beluga whale.
+        Beluga whales can swim backwards, are highly social and are called the 'canaries of the sea'. This is because they make a
+        wide variety of bird-like sounds.
+    </p>
+    <img src="{{ url_for('static', filename='Beluga.jpg') }}" alt="Beluga Whale Picture">
 </body>
 </html>
